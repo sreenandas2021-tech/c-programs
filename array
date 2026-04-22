@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[5]={1,2,5,4,2};
+    int i,j,temp;
+    for (i=0;i<5;i++)
+    {
+        for(j=i+1;j<5;j++)
+        {
+            if (arr[j]==arr[i])
+            {
+                temp=arr[i];
+            }
+        }
+    }
+    if(temp)
+    {
+        printf("true");
+    }
+    else
+    {
+        printf("false");
+    }
+}
